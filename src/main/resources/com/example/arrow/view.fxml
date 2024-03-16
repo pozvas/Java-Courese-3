@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<!--<?import com.example.arrow.AimTarget ?>!-->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arrow.GameController">
+   <bottom>
+      <Pane prefHeight="46.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#StartButtonClick" prefHeight="25.0" prefWidth="89.0" text="Старт" />
+            <Button fx:id="pauseBtn" layoutX="119.0" layoutY="14.0" mnemonicParsing="false" onAction="#PauseButtonClick" prefHeight="25.0" prefWidth="89.0" text="Пауза" />
+            <Button layoutX="341.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShootButtonClick" prefHeight="25.0" prefWidth="99.0" text="Выстрел" />
+            <Button layoutX="227.0" layoutY="14.0" mnemonicParsing="false" onAction="#StopButtonClick" prefHeight="25.0" prefWidth="96.0" text="Стоп" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane fx:id="mainWindow" prefHeight="554.0" prefWidth="826.0" style="-fx-border-color: black; -fx-border-width: 0 1 1 1;" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="330.0" prefWidth="112.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label" layoutX="29.0" layoutY="98.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label fx:id="shoots" layoutX="29.0" layoutY="221.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="2.0" layoutY="26.0" prefHeight="72.0" prefWidth="111.0" text="Количество очков:" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" layoutY="146.0" prefHeight="66.0" prefWidth="112.0" text="Количество выстрелов:" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </right>
+   <left>
+      <Pane prefHeight="554.0" prefWidth="73.0" style="-fx-border-color: black; -fx-border-width: 0 0 1 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Polygon fill="YELLOW" points="0.0, 317, 73.33332824707031, 277, 0.0, 237" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>
