@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<?import com.example.arrow.client.AimTarget ?>!-->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arrow.client.GameController">
+   <bottom>
+      <Pane prefHeight="46.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#StartButtonClick" prefHeight="25.0" prefWidth="89.0" text="Старт" />
+            <Button fx:id="pauseBtn" layoutX="119.0" layoutY="14.0" mnemonicParsing="false" onAction="#PauseButtonClick" prefHeight="25.0" prefWidth="89.0" text="Пауза" />
+            <Button layoutX="228.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShootButtonClick" prefHeight="25.0" prefWidth="99.0" text="Выстрел" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane fx:id="mainWindow" prefHeight="554.0" prefWidth="826.0" style="-fx-border-color: black; -fx-border-width: 0 1 1 1;" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane fx:id="labelPane" prefHeight="330.0" prefWidth="112.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+         </children></Pane>
+   </right>
+   <left>
+      <Pane fx:id="Players" prefHeight="554.0" prefWidth="73.0" style="-fx-border-color: black; -fx-border-width: 0 0 1 0;" BorderPane.alignment="CENTER">
+         <children>
+
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

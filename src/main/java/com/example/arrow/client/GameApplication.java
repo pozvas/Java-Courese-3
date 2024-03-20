@@ -1,4 +1,4 @@
-package com.example.arrow;
+package com.example.arrow.client;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,6 +14,7 @@ public class GameApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1000, 600);
         stage.setTitle("Hello!");
         stage.setScene(scene);
+        stage.setOnCloseRequest(((GameController)fxmlLoader.getController()).onClose());
         stage.show();
     }
 

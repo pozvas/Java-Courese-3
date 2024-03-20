@@ -4,7 +4,11 @@ module com.example.arrow {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires com.google.gson;
 
-    opens com.example.arrow to javafx.fxml;
-    exports com.example.arrow;
+
+    exports com.example.arrow.server;
+    exports com.example.arrow.client;
+    opens com.example.arrow.client to javafx.fxml;
+    opens com.example.arrow to com.google.gson;
 }
